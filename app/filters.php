@@ -2,12 +2,12 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application & Route Filters
+| アプリケーションとルートのフィルター
 |--------------------------------------------------------------------------
 |
-| Below you will find the "before" and "after" events for the application
-| which may be used to do any work before or after a request into your
-| application. Here you may also register your custom route filters.
+| アプリケーションへのリクエストの前後に何か動作をさせるための
+| "before"と"after"イベントに対するコードが下で定義されています。
+| また、カスタムルートフィルターもここで定義します。
 |
 */
 
@@ -24,12 +24,12 @@ App::after(function($request, $response)
 
 /*
 |--------------------------------------------------------------------------
-| Authentication Filters
+| 認証フィルター
 |--------------------------------------------------------------------------
 |
-| The following filters are used to verify that the user of the current
-| session is logged into this application. The "basic" filter easily
-| integrates HTTP Basic authentication for quick, simple checking.
+| 以下のフィルターはユーザーが現在のセッションでアプリケーションに
+| ログイン中であるか調べるためのものです。さらに"guest"フィルターは
+| 逆の働きをします。両方ともリダイレクトしています。
 |
 */
 
@@ -46,12 +46,12 @@ Route::filter('auth.basic', function()
 
 /*
 |--------------------------------------------------------------------------
-| Guest Filter
+| ゲストフィルター
 |--------------------------------------------------------------------------
 |
-| The "guest" filter is the counterpart of the authentication filters as
-| it simply checks that the current user is not logged in. A redirect
-| response will be issued if they are, which you may freely change.
+| "guest"フィルータは認証フィルターとは全く逆の働きをし、単にユーザーが
+| ログインしていないことをチェックします。リダイレクトのレスポンスが
+| 問題になるようでしたら、ご自由に変更してください。
 |
 */
 
@@ -62,12 +62,12 @@ Route::filter('guest', function()
 
 /*
 |--------------------------------------------------------------------------
-| CSRF Protection Filter
+| CSRFへの保護フィルター
 |--------------------------------------------------------------------------
 |
-| The CSRF filter is responsible for protecting your application against
-| cross-site request forgery attacks. If this special token in a user
-| session does not match the one given in this request, we'll bail.
+| CSRFフィルターはクロスサイト・リクエスト・フォージェリ攻撃に対して
+| アプリケーションを保護します。リクエストに含まれる特別なトークンが、
+| セッションに保存されているものと一致しない場合、無効とします。
 |
 */
 

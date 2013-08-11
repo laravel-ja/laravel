@@ -4,13 +4,13 @@ define('LARAVEL_START', microtime(true));
 
 /*
 |--------------------------------------------------------------------------
-| Register The Composer Auto Loader
+| Composerのオートローダーを登録する
 |--------------------------------------------------------------------------
 |
-| Composer provides a convenient, automatically generated class loader
-| for our application. We just need to utilize it! We'll require it
-| into the script here so that we do not have to worry about the
-| loading of any our classes "manually". Feels great to relax.
+| Composerはアプリケーションのために便利なクラスのオートローダーを
+| 自動的に生成する機能を提供してくれています。利用しない手はありません！
+| ここでスクリプトをrequireし、クラスを「手動」でロードする手間に
+| 悩まないようにしましょう。リラックして行きましょう。
 |
 */
 
@@ -18,12 +18,12 @@ require __DIR__.'/../vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
-| Include The Compiled Class File
+| コンパイル済みクラスファイルを取り込む
 |--------------------------------------------------------------------------
 |
-| To dramatically increase your application's performance, you may use a
-| compiled class file which contains all of the classes commonly used
-| by a request. The Artisan "optimize" is used to create this file.
+| アプリケーションのパフォーマンスを劇的に改善するため、
+| リクエストに必要な全クラスをまとめたコンパイル済みクラスファイルを
+| 使いましょう。"optimize"Artisanコマンドで生成できます。
 |
 */
 
@@ -34,12 +34,12 @@ if (file_exists($compiled = __DIR__.'/compiled.php'))
 
 /*
 |--------------------------------------------------------------------------
-| Setup Patchwork UTF-8 Handling
+| Patchwork UTF-8ハンドリングの準備
 |--------------------------------------------------------------------------
 |
-| The Patchwork library provides solid handling of UTF-8 strings as well
-| as provides replacements for all mb_* and iconv type functions that
-| are not available by default in PHP. We'll setup this stuff here.
+| Patchworkライブラリーは全mb_関数の代わりにUTF-8文字列を確実に
+| 処理する機能と、デフォルトのPHPでは用意されていないようなiconv
+| タイプの関数を提供しています。ここで準備を行いましょう。
 |
 */
 
@@ -47,12 +47,12 @@ Patchwork\Utf8\Bootup::initMbstring();
 
 /*
 |--------------------------------------------------------------------------
-| Register The Laravel Auto Loader
+| Laravelオートローダーの登録
 |--------------------------------------------------------------------------
 |
-| We register an auto-loader "behind" the Composer loader that can load
-| model classes on the fly, even if the autoload files have not been
-| regenerated for the application. We'll add it to the stack here.
+| アプリケーションのオートロードファイルを生成しなくても
+| モデルクラスのロードができるように、Composerのローダーの
+| 「裏」で動作するオートローダーを登録します。スタックに追加しています。
 |
 */
 
@@ -60,12 +60,12 @@ Illuminate\Support\ClassLoader::register();
 
 /*
 |--------------------------------------------------------------------------
-| Register The Workbench Loaders
+| ワークベンチローダーの登録
 |--------------------------------------------------------------------------
 |
-| The Laravel workbench provides a convenient place to develop packages
-| when working locally. However we will need to load in the Composer
-| auto-load files for the packages so that these can be used here.
+| Laravelのワークベンチはローカルで開発するために便利な環境を
+| 提供してくれます。しかしながらそうしたパッケージを使用するには
+| Composerのオートロードファイルで読み込まれる必要があります。
 |
 */
 

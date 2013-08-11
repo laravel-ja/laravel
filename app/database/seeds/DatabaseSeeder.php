@@ -3,7 +3,7 @@
 class DatabaseSeeder extends Seeder {
 
 	/**
-	 * Run the database seeds.
+	 * データベースシード（初期値設定）を実行
 	 *
 	 * @return void
 	 */

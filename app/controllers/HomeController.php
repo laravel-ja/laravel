@@ -4,12 +4,12 @@ class HomeController extends BaseController {
 
 	/*
 	|--------------------------------------------------------------------------
-	| Default Home Controller
+	| デフォルトHomeコントローラー
 	|--------------------------------------------------------------------------
 	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
+	| クロージャーベースのルーティングの代わりに、もしくはそれに付け加え
+	| コントローラーを使いたいと思うことでしょう。それは素晴らしい！
+	| このコントローラーを動作させるには、ルートに以下を付け加えてください。
 	|
 	|	Route::get('/', 'HomeController@showWelcome');
 	|

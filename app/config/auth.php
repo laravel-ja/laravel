@@ -4,14 +4,14 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Default Authentication Driver
+	| デフォルト認証ドライバー
 	|--------------------------------------------------------------------------
 	|
-	| This option controls the authentication driver that will be utilized.
-	| This drivers manages the retrieval and authentication of the users
-	| attempting to get access to protected areas of your application.
+	| このオプションは認証で使用するドライバーを設定します。
+	| このドライバーはアプリケーションの保護領域へユーザーがアクセスする時の
+	| 認証を管理します。
 	|
-	| Supported: "database", "eloquent"
+	| サポートドライバー: "database", "eloquent"
 	|
 	*/
 
@@ -19,12 +19,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Authentication Model
+	| 認証モデル
 	|--------------------------------------------------------------------------
 	|
-	| When using the "Eloquent" authentication driver, we need to know which
-	| Eloquent model should be used to retrieve your users. Of course, it
-	| is often just the "User" model but you may use whatever you like.
+	| "Eloquent"認証ドライバーを使用する場合、ユーザー情報を取得する
+	| Eloquentモデルの指定が必要です。もちろん、通常は"User"モデル
+	| でしょうが、お好きなものをどうぞ。
 	|
 	*/
 
@@ -32,12 +32,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Authentication Table
+	| 認証テーブル
 	|--------------------------------------------------------------------------
 	|
-	| When using the "Database" authentication driver, we need to know which
-	| table should be used to retrieve your users. We have chosen a basic
-	| default value but you may easily change it to any table you like.
+	| "Database"認証ドライバーを使用する場合、ユーザーを取得するための
+	| テーブルを指定する必要があります。基本的な値をデフォルトにしていますが、
+	| お好きなテーブル名へ簡単に変更できます。
 	|
 	*/
 
@@ -45,12 +45,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Password Reminder Settings
+	| パスワードリマインダー設定
 	|--------------------------------------------------------------------------
 	|
-	| Here you may set the settings for password reminders, including a view
-	| that should be used as your password reminder e-mail. You will also
-	| be able to set the name of the table that holds the reset tokens.
+	| ここではパスワードリマインダーの設定を行います。それにはパスワード
+	| リマインダー時に使用するメールの指定も含まれます。また、リセットトークンを
+	| 保存しておくためのテーブル名も指定可能です。
 	|
 	*/
 

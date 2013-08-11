@@ -4,14 +4,14 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Default Cache Driver
+	| デフォルトキャッシュドライバー
 	|--------------------------------------------------------------------------
 	|
-	| This option controls the default cache "driver" that will be used when
-	| using the Caching library. Of course, you may use other drivers any
-	| time you wish. This is the default when another is not specified.
+	| キャッシュライブラリーで使用されるデフォルトドライバーをこのオプションで
+	| コントロールします。もちろんお好きな他のドライバーをいつでも使用できます。
+	| これはドライバーが指定されなかった場合に使用されます。
 	|
-	| Supported: "file", "database", "apc", "memcached", "redis", "array"
+	| サポートドライバー: "file", "database", "apc", "memcached", "redis", "array"
 	|
 	*/
 
@@ -19,12 +19,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| File Cache Location
+	| ファイルキャッシュ保存場所
 	|--------------------------------------------------------------------------
 	|
-	| When using the "file" cache driver, we need a location where the cache
-	| files may be stored. A sensible default has been specified, but you
-	| are free to change it to any other place on disk that you desire.
+	| "file"キャッシュドライバーを使用する時には、ファイルを保存しておく
+	| 場所が必要となります。妥当なデフォルトが指定されていますが、あなたの
+	| お好きな場所を指定できます。
 	|
 	*/
 
@@ -32,12 +32,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Database Cache Connection
+	| データベースキャッシュ接続
 	|--------------------------------------------------------------------------
 	|
-	| When using the "database" cache driver you may specify the connection
-	| that should be used to store the cached items. When this option is
-	| null the default database connection will be utilized for cache.
+	| "database"キャッシュドライバーを使用する時にキャッシュアイテムを
+	| 保存するための接続を指定する必要があります。このオプションがnullであれば
+	| デフォルトのデータベース接続が使用されます。
 	|
 	*/
 
@@ -45,12 +45,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Database Cache Table
+	| データベースキャッシュテーブル
 	|--------------------------------------------------------------------------
 	|
-	| When using the "database" cache driver we need to know the table that
-	| should be used to store the cached items. A default table name has
-	| been provided but you're free to change it however you deem fit.
+	| "database"キャッシュドライバーを使用する場合、キャッシュアイテムを
+	| 保存するテーブルを指定する必要があります。デフォルトの名前を指定してますが
+	| 自由にピッタリするものに自由に変更してください。
 	|
 	*/
 
@@ -58,12 +58,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Memcached Servers
+	| Memcachedサーバー
 	|--------------------------------------------------------------------------
 	|
-	| Now you may specify an array of your Memcached servers that should be
-	| used when utilizing the Memcached cache driver. All of the servers
-	| should contain a value for "host", "port", and "weight" options.
+	| ここではMemcachedキャッシュドライバーを使用する場合の、サーバー設定を
+	| 配列で指定します。全てのサーバーを"host", "port", "weight"オプションで
+	| 設定します。
 	|
 	*/
 
@@ -75,12 +75,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Cache Key Prefix
+	| キャッシュキープレフィックス
 	|--------------------------------------------------------------------------
 	|
-	| When utilizing a RAM based store such as APC or Memcached, there might
-	| be other applications utilizing the same cache. So, we'll specify a
-	| value to get prefixed to all our keys so we can avoid collisions.
+	| APCやMemcachedのようなRAMベースでの保存法を使用する場合、
+	| 他のアプリケーションも使用しているかも知れません。衝突を避けるために
+	| 全部のキーにプレフィックスをつけた値を指定します。
 	|
 	*/
 

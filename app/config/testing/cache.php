@@ -4,14 +4,14 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Default Cache Driver
+	| デフォルトキャッシュドライバー
 	|--------------------------------------------------------------------------
 	|
-	| This option controls the default cache "driver" that will be used when
-	| using the Caching library. Of course, you may use other drivers any
-	| time you wish. This is the default when another is not specified.
+	| キャッシュライブラリーで使用されるデフォルトドライバーをこのオプションで
+	| コントロールします。もちろんお好きな他のドライバーをいつでも使用できます。
+	| これはドライバーが指定されなかった場合に使用されます。
 	|
-	| Supported: "file", "database", "apc", "memcached", "redis", "array"
+	| サポートドライバー: "file", "database", "apc", "memcached", "redis", "array"
 	|
 	*/
 

@@ -4,12 +4,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Application Path
+	| アプリケーションパス
 	|--------------------------------------------------------------------------
 	|
-	| Here we just defined the path to the application directory. Most likely
-	| you will never need to change this value as the default setup should
-	| work perfectly fine for the vast majority of all our applications.
+	| ここではアプリケーションディレクトリーのパスを定義しています。
+	| 大抵のアプリケーションではデフォルトで完全に上手く動作するので、
+	| 変更する必要は全くありません。
 	|
 	*/
 
@@ -17,12 +17,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Public Path
+	| Publicパス
 	|--------------------------------------------------------------------------
 	|
-	| The public path contains the assets for your web application, such as
-	| your JavaScript and CSS files, and also contains the primary entry
-	| point for web requests into these applications from the outside.
+	| publicパスはJavascriptやCSSファイルのようなWebアプリ
+	| ケーションの資産で構成されています。また、外部からアプリケーションへ
+	| Webリクエストを送る場合の主なエントリポイントも含んでいます。
 	|
 	*/
 
@@ -30,12 +30,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Base Path
+	| ベースパス
 	|--------------------------------------------------------------------------
 	|
-	| The base path is the root of the Laravel installation. Most likely you
-	| will not need to change this value. But, if for some wild reason it
-	| is necessary you will do so here, just proceed with some caution.
+	| ベースパスはLaravelをインストールした大本です。
+	| 大抵の場合、この値を変更する必要はありません。
+	| しかし、やむを得ず変更する場合は、注意深く行なってください。
 	|
 	*/
 
@@ -43,12 +43,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Storage Path
+	| Storageパス
 	|--------------------------------------------------------------------------
 	|
-	| The storage path is used by Laravel to store cached Blade views, logs
-	| and other pieces of information. You may modify the path here when
-	| you want to change the location of this directory for your apps.
+	| StorageパスはLaravelにより、Bladeビューのキャッシュや、ログなどの
+	| 情報を保存するために使用されます。アプリケーションのために
+	| ディレクトリーの場所を変更したい場合は、このパスを修正してください。
 	|
 	*/
 

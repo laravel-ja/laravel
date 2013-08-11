@@ -4,12 +4,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Default Session Driver
+	| デフォルトセッションドライバー
 	|--------------------------------------------------------------------------
 	|
-	| This option controls the default session "driver" that will be used on
-	| requests. By default, we will use the lightweight native driver but
-	| you may specify any of the other wonderful drivers provided here.
+	| このオプションはリクエストに対するデフォルトのセッションドライバーを
+	| 指定するためのものです。一番軽いネイティブドライバーを設定していますが、
+	| 用意されている他の素晴らしいドライバーも使用できます。
 	|
 	| Supported: "native", "cookie", "database", "apc",
 	|            "memcached", "redis", "array"

@@ -2,12 +2,12 @@
 
 /*
 |--------------------------------------------------------------------------
-| Create The Application
+| アプリケーションの生成
 |--------------------------------------------------------------------------
 |
-| The first thing we will do is create a new Laravel application instance
-| which serves as the "glue" for all the components of Laravel, and is
-| the IoC container for the system binding all of the various parts.
+| 最初に行うのは、Laravelの全コンポーネントに対し「糊」のように働き、
+| いろいろな部分をシステムのため全部結びつけるIoCコンテナとしても
+| 動作するLaravelアプリケーションのインスタンスを生成することです。
 |
 */
 
@@ -17,12 +17,12 @@ $app->redirectIfTrailingSlash();
 
 /*
 |--------------------------------------------------------------------------
-| Detect The Application Environment
+| アプリケーション動作環境の決定
 |--------------------------------------------------------------------------
 |
-| Laravel takes a dead simple approach to your application environments
-| so you can just specify a machine name or HTTP host that matches a
-| given environment, then we will automatically detect it for you.
+| Laravelは極めて簡単なアプローチをアプリケーション環境に対して取っています。
+| ですから環境に対応するマシン名かHTTPホストを指定してください。
+| それにより、自動的に環境は決定されます。
 |
 */
 
@@ -34,12 +34,12 @@ $env = $app->detectEnvironment(array(
 
 /*
 |--------------------------------------------------------------------------
-| Bind Paths
+| パスの結合
 |--------------------------------------------------------------------------
 |
-| Here we are binding the paths configured in paths.php to the app. You
-| should not be changing these here. If you need to change these you
-| may do so within the paths.php file and they will be bound here.
+| ここではpaths.phpで設定されているパスをappと結合しています。
+| これは変更しないでください。変更の必要がある場合は、
+| pahts.phpファイルを開き内部の設定を変更してください。
 |
 */
 
@@ -47,12 +47,12 @@ $app->bindInstallPaths(require __DIR__.'/paths.php');
 
 /*
 |--------------------------------------------------------------------------
-| Load The Application
+| アプリケーションをロードする
 |--------------------------------------------------------------------------
 |
-| Here we will load the Illuminate application. We'll keep this is in a
-| separate location so we can isolate the creation of an application
-| from the actual running of the application with a given request.
+| ここではIlluminateアプリケーションををロードしています。
+| 与えられたリクエストのために実際に実行されるアプリケーションとは
+| 独立させてアプリケーションを生成できるように、別の場所に分けています。
 |
 */
 
@@ -62,12 +62,12 @@ require $framework.'/Illuminate/Foundation/start.php';
 
 /*
 |--------------------------------------------------------------------------
-| Return The Application
+| アプリケーションをリターンする
 |--------------------------------------------------------------------------
 |
-| This script returns the application instance. The instance is given to
-| the calling script so we can separate the building of the instances
-| from the actual running of the application and sending responses.
+| このスクリプトはアプリケーションのインスタンスを返します。インスタンスは
+| 呼び出し元のスクリプトに渡されます。ですから実際に動作している
+| アプリケーションとレスポンスの送信のインスタンスを分けて構築できます。
 |
 */
 

@@ -8,9 +8,9 @@ $paths = require __DIR__.'/bootstrap/paths.php';
 
 $requested = $paths['public'].$uri;
 
-// This file allows us to emulate Apache's "mod_rewrite" functionality from the
-// built-in PHP web server. This provides a convenient way to test a Laravel
-// application without having installed a "real" web server software here.
+// このファイルはPHPの組み込みWebサーバーで、Apacheの"mod_rewrite"機能を
+// エミュレートするためのものです。これにより、Laravelアプリケーションをテストするために
+// 「本当」のWebサーバーソフトウェアをインストールしなくても済むようにしてくれます。
 if ($uri !== '/' and file_exists($requested))
 {
 	return false;

@@ -2,12 +2,12 @@
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| アプリケーションルート
 |--------------------------------------------------------------------------
 |
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
+| このファイルでアプリケーションの全ルートを定義します。
+| 方法は簡単です。対応するURIをLaravelに指定してください。
+| そしてそのURIに対応する実行コードをクロージャーで指定します。
 |
 */
 

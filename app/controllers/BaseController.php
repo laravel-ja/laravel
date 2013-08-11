@@ -3,7 +3,7 @@
 class BaseController extends Controller {
 
 	/**
-	 * Setup the layout used by the controller.
+	 * コントローラーにより使用されるレイアウトの設定.
 	 *
 	 * @return void
 	 */

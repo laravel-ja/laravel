@@ -4,14 +4,14 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Default Queue Driver
+	| デフォルトキュードライバー
 	|--------------------------------------------------------------------------
 	|
-	| The Laravel queue API supports a variety of back-ends via an unified
-	| API, giving you convenient access to each back-end using the same
-	| syntax for each one. Here you may set the default queue driver.
+	| LaravelキューAPIは同じ文法を使用して様々なバックエンドが使用できるよう
+	| 統一されたAPIをサポートしています。ここではデフォルトキュードライバーを
+	| 設定します。
 	|
-	| Supported: "sync", "beanstalkd", "sqs", "iron"
+	| サポートドライバー: "sync", "beanstalkd", "sqs"
 	|
 	*/
 
@@ -19,12 +19,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Queue Connections
+	| キュー接続
 	|--------------------------------------------------------------------------
 	|
-	| Here you may configure the connection information for each server that
-	| is used by your application. A default configuration has been added
-	| for each back-end shipped with Laravel. You are free to add more.
+	| ここでアプリケーションが使用するそれぞれのサーバーに対する接続情報を
+	| 設定します。それぞれのバックエンドのデフォルト接続はLaravelに最初から
+	| 設定されています。自由に追加してください。
 	|
 	*/
 
