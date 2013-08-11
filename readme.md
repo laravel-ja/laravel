@@ -1,19 +1,19 @@
-## Laravel PHP Framework
+## Laravel PHP フレームワーク
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.
+Laravelは表現力に富むエレガントな記述が使用できるWebアプリケーションのフレームワークです。開発とは何かを真に達成するための、楽しく創造的な経験であるべきだと、私達は信じています。Laravelは大部分のWebプロジェクトで多用される認証、ルーティング、セッション、キャッシュのようなタスクを実装し、開発の苦痛を取り去ることを目指しています。
 
-Laravel aims to make the development process a pleasing one for the developer without sacrificing application functionality. Happy developers make the best code. To this end, we've attempted to combine the very best of what we have seen in other web frameworks, including frameworks implemented in other languages, such as Ruby on Rails, ASP.NET MVC, and Sinatra.
+Laravelはアプリケーションの機能性を犠牲にせずに、開発工程を開発者にとって楽しいものにする目的を持っています。幸せな開発者が最高のコードを書くのです。この目的のため、Ruby on RailsやASP.NET MVC、Sinatoraのような他のフレームワークと他の言語での実装に見られるベストな機能を結びつけようと努力してきました。
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+Laravelは利用しやすく、さらにパワフルで、大きくて頑丈なアプリケーションに必要である強力なツールを提供しています。素晴らしい制御の逆転コンテナ、記述的なマイグレーションシステム、しっかりと統合されたユニットテストサポートは、あなたの取り組むどんなアプリケーションを構築するにも必要なツールを提供しています。
 
-## Official Documentation
+## 公式ドキュメント
 
-Documentation for the entire framework can be found on the [Laravel website](http://laravel.com/docs).
+フレームワーク全体のドキュメントは、[LaravelのWebサイト](http://laravel.com/docs)にあります。（訳注：開発者が多言語では理解できないため、Laravelの公式版は英語しか存在しません。日本語翻訳版は[こちら](http://laravel4.kore1server.com/docs)からどうぞ。）
 
-### Contributing To Laravel
+### Laravelに貢献する
 
-**All issues and pull requests should be filed on the [laravel/framework](http://github.com/laravel/framework) repository.**
+**全ての問題とプル・リクエストは、[laravel/framework](http://github.com/laravel/framework)リポジトリーへお願いします。（訳注：英語のみです。）**
 
-### License
+### ライセンス
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+Laravelフレームワークは[MITライセンス](http://opensource.org/licenses/MIT)のオープンソース・ソフトウェアです。
