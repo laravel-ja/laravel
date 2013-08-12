@@ -36,6 +36,7 @@ then
 fi
 
 
+
 # テスト関連パッケージ
 
 # Codeseption BDDスタイルテストフレームワーク
@@ -44,17 +45,38 @@ fi
 # Mamcrest マッチャー(matcher)
 # sh ippatsu-kun/hamcrest.sh
 
+# way laravel-test-helpers ユニットテストヘルパー
+# sh ippatsu-kun/way-test-helpers.sh
+
+
 
 # ツール
 
-# Juy Profiler セッション単位のプロファイラー
+# juy profiler セッション単位のプロファイラー
 # sh ippatsu-kun/juy-profiler.sh
 
-# Way Generators Laravel4向けコードジェネレーター
+# way generators Laravel4向けコードジェネレーター
 # sh ippatsu-kun/way-generators.sh
 
-# Barryvdh IDEヘルパー IDE/エディターコード補完コード生成
+# barryvdh IDEヘルパー IDE/エディターコード補完用コード生成
 # sh ippatsu-kun/barryvdh-ide-helper.sh
+
+
+
+# 認証パッケージ
+
+# cartalyst sentry 一番人気の認証パッケージ
+# sh ippatsu-kun/cartalyst-sentry.sh
+
+
+
+# Eloquent強化パッケージ
+
+# laravelbook　ardent ORMに自己バリデーション機能を追加
+
+# sh ippatsu-kun/laravelbook-ardent.sh
+
+
 
 
 

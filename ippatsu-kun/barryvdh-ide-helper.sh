@@ -14,9 +14,12 @@ then
   # app.phpの書き換え
   sed -i -e "s+'Illuminate\\\\Workbench\\\\WorkbenchServiceProvider',+'Illuminate\\\\Workbench\\\\WorkbenchServiceProvider',\\n\\t\\t'Barryvdh\\\\LaravelIdeHelper\\\\IdeHelperServiceProvider',+" app/config/app.php
 
-  echo データベース環境の設定後、
-  echo php artisan ide-helper:generate を実行して
-  echo コードを生成してください。
+  echo ========================================
+  echo コードを生成するには、データベース環境の設定後、
+  echo php artisan ide-helper:generate を実行し
+  echo 生成してください。
+  echo しなくても、生成可能ですが、一部エラーになります。
+  echo ========================================
 
   echo barryvdh/laravel-ide-helper installed.
 fi
