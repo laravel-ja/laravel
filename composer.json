@@ -1,4 +1,22 @@
 {
+    "name": "laravel-ja/laravel",
+    "description": "Laravel4 comments translated in Japanese with Japanese language files.",
+    "keywords": ["Japanese", "Laravel"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Taylor Otwell",
+            "homepage": "https://github.com/taylorotwell",
+            "email": "taylorotwell@gmail.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Hirohisa Kawase",
+            "homepage": "http://kore1server.com",
+            "email": "hirokws@gmail.com",
+            "role": "Translator"
+        },
+    ],
 	"require": {
 		"laravel/framework": "4.0.*"
 	},
