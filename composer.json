@@ -15,7 +15,7 @@
             "homepage": "http://kore1server.com",
             "email": "hirokws@gmail.com",
             "role": "Translator"
-        },
+        }
     ],
 	"require": {
 		"laravel/framework": "4.0.*"
