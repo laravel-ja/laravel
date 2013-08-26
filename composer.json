@@ -18,7 +18,8 @@
         }
     ],
 	"require": {
-		"laravel/framework": "4.0.*"
+		"laravel/framework": "4.0.*",
+		"hirokws/prepper": "dev-master"
 	},
 	"autoload": {
 		"classmap": [

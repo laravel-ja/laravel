@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if [ ! -d vendor/davedevelopment/hamcrest-php ]
 then
   echo Hamcrest installing...

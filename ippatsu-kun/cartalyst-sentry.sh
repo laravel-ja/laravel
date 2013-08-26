@@ -1,18 +1,15 @@
 #!/bin/bash
 
+set -e
+
 if [ ! -d vendor/cartalyst/sentry ]
 then
-  echo cartalyst/sentry installing...
+  echo cartalyst/sentry インストール開始
 
   # requireセクションに追加
   sed -i -e 's+"laravel/framework": "4.0.\*"+"cartalyst/sentry": "2.0.*",\n\t\t"laravel/framework": "4.0.*"+' composer.json
 
   composer update
-
-  # app.phpの書き換え
-  sed -i -e "s+'Illuminate\\\\Workbench\\\\WorkbenchServiceProvider',+'Illuminate\\\\Workbench\\\\WorkbenchServiceProvider',\\n\\t\\t'Cartalyst\\\\Sentry\\\\SentryServiceProvider',+" app/config/app.php
-
-  sed -i -e "s+'Illuminate\\\\Support\\\\Facades\\\\View',+'Illuminate\\\\Support\\\\Facades\\\\View',\\n\\t\\t'Sentry' => 'Cartalyst\\\\Sentry\\\\Facades\\\\Laravel\\\\Sentry',+" app/config/app.php
 
   echo ==============================================
   echo sentryのデフォルトマイグレーションを行うには、
@@ -21,5 +18,5 @@ then
   echo を実行してください。
   echo ==============================================
 
-  echo cartalyst/sentry installed.
+  echo cartalyst/sentry インストール終了
 fi

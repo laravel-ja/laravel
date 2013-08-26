@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 if [ ! -d vendor/codeception ]
 then
   echo Codeception installing...
