@@ -2,6 +2,8 @@
 
 set -e
 
+echo Codeceptionインストール開始
+
 if [ ! -d vendor/codeception ]
 then
   echo Codeception installing...
@@ -9,3 +11,5 @@ then
   composer update
   echo Codeception installed.
 fi
+
+echo Codeceptionインストール終了

@@ -4,7 +4,7 @@ set -e
 
 if [ ! -d vendor/frozennode/administrator ]
 then
-  echo Juy/profiler インストール開始
+  echo frozennode/administrator インストール開始
 
   # requireセクションに追加する場合（推奨）
   sed -i -e 's+"laravel/framework": "4.0.\*"+"frozennode/administrator": "dev-master",\n\t\t"laravel/framework": "4.0.*"+' composer.json
@@ -20,5 +20,5 @@ then
   echo アセットをpublicディレクトリーへコピー
   php artisan asset:publish frozennode/administrator
 
-  echo Juy/profiler インストール終了
+  echo frozennode/administrator インストール終了
 fi

@@ -26,10 +26,11 @@ set -e
 
 if [ ! -f composer.lock ]
 then
-  echo Laravelインストール
+  echo Laravelインストール開始
   composer install
+  echo Laravelインストール終了
 
-  echo app/storage下のパーミッション設定(o+w)
+  echo app/storage下のパーミッション設定（o+w）
   chmod -R o+w app/storage
 fi
 
@@ -39,15 +40,19 @@ vendor/bin/prepper-start.sh
 
 # require-divセクション追加
 
+set +e
 grep '"require\-dev"' composer.json > /dev/null
 
 if [ "$?" -eq 1 ]
 then
-  echo PHPUnitとMockeryインストール
+  set -e
+  echo PHPUnit、Mockeryインストール開始
   sed -i -e 's+\t"autoload":+\t"require-dev": {\n\t\t"phpunit/phpunit": "3.7.*@dev",\n\t\t"mockery/mockery": "dev-master"\n\t},\n\t"autoload":+' composer.json
   composer update
+  echo PHPUnit、Mockeryインストール終了
 fi
 
+set -e
 
 
 # < テスト関連パッケージ >

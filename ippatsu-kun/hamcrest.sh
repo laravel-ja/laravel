@@ -2,6 +2,8 @@
 
 set -e
 
+echo Hamcrestインストール開始
+
 if [ ! -d vendor/davedevelopment/hamcrest-php ]
 then
   echo Hamcrest installing...
@@ -9,3 +11,5 @@ then
   composer update
   echo Hamcrest installed.
 fi
+
+echo Hamcrestインストール終了
