@@ -36,14 +36,17 @@
             "php artisan clear-compiled"
         ],
         "post-install-cmd": [
+            "php artisan key:generate",
             "php artisan optimize",
-            "vendor/bin/prepper-start.sh"
+            "vendor/bin/prepper-start.bat"
         ],
         "post-update-cmd": [
             "php artisan optimize"
         ],
         "post-create-project-cmd": [
-            "vendor/bin/prepper-start.sh"
+            "php artisan key:generate",
+            "php artisan optimize",
+            "vendor/bin/prepper-start.bat"
         ]
     },
 	"config": {

@@ -70,11 +70,15 @@ set -e
 
 # < ツール >
 
-# juy profiler
+# juy profiler セッション単位のプロファイラー
 # sh ippatsu-kun/juy-profiler.sh
 
 # loic-sharma profiler セッション単位のプロファイラー
 # sh ippatsu-kun/loic-sharma-profiler.sh
+
+# 注意！
+# 二つのプロファイラーを同時にインストールすると、
+# 正しく動作しません。機能的にはjuy profilerをおすすめします。
 
 # way generators Laravel4向けコードジェネレーター
 # sh ippatsu-kun/way-generators.sh
