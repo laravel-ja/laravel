@@ -31,17 +31,21 @@
 			"app/tests/TestCase.php"
 		]
 	},
-	"scripts": {
-		"pre-update-cmd": [
-			"php artisan clear-compiled"
-		],
-		"post-install-cmd": [
-			"php artisan optimize"
-		],
-		"post-update-cmd": [
-			"php artisan optimize"
-		]
-	},
+    "scripts": {
+        "pre-update-cmd": [
+            "php artisan clear-compiled"
+        ],
+        "post-install-cmd": [
+            "php artisan optimize",
+            "vendor/bin/prepper-start.sh"
+        ],
+        "post-update-cmd": [
+            "php artisan optimize"
+        ],
+        "post-create-project-cmd": [
+            "vendor/bin/prepper-start.sh"
+        ]
+    },
 	"config": {
 		"preferred-install": "dist"
 	},
