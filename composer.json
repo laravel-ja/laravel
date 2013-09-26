@@ -37,6 +37,7 @@
         ],
         "post-install-cmd": [
             "php artisan optimize",
+            "php artisan key:generate",
             "vendor/bin/prepper-start.bat"
         ],
         "post-update-cmd": [
