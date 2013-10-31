@@ -4,12 +4,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Validation Language Lines
+	| バリデーション言語行
 	|--------------------------------------------------------------------------
 	|
-	| The following language lines contain the default error messages used by
-	| the validator class. Some of these rules have multiple versions such
-	| such as the size rules. Feel free to tweak each of these messages.
+	| 以下の言語行はバリデタークラスにより使用されるデフォルトのエラー
+	| メッセージです。サイズルールのようにいくつかのバリデーションを
+	| 持っているものもあります。メッセージはご自由に調整してください。
 	|
 	*/
 
@@ -22,10 +22,10 @@ return array(
 	"array"            => "The :attribute must be an array.",
 	"before"           => "The :attribute must be a date before :date.",
 	"between"          => array(
-		"numeric" => "The :attribute must be between :min - :max.",
-		"file"    => "The :attribute must be between :min - :max kilobytes.",
-		"string"  => "The :attribute must be between :min - :max characters.",
-		"array"   => "The :attribute must have between :min - :max items.",
+		"numeric" => "The :attribute must be between :min and :max.",
+		"file"    => "The :attribute must be between :min and :max kilobytes.",
+		"string"  => "The :attribute must be between :min and :max characters.",
+		"array"   => "The :attribute must have between :min and :max items.",
 	),
 	"confirmed"        => "The :attribute confirmation does not match.",
 	"date"             => "The :attribute is not a valid date.",
@@ -71,12 +71,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Custom Validation Language Lines
+	| カスタムバリデーション言語行
 	|--------------------------------------------------------------------------
 	|
-	| Here you may specify custom validation messages for attributes using the
-	| convention "attribute.rule" to name the lines. This makes it quick to
-	| specify a specific custom language line for a given attribute rule.
+	| "属性.ルール"の規約でキーを指定することでカスタムバリデーション
+	| メッセージを定義できます。指定した属性ルールに対する特定の
+	| カスタム言語行を手早く指定できます。
 	|
 	*/
 
@@ -84,12 +84,12 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
-	| Custom Validation Attributes
+	| カスタムバリデーション属性名
 	|--------------------------------------------------------------------------
 	|
-	| The following language lines are used to swap attribute place-holders
-	| with something more reader friendly such as E-Mail Address instead
-	| of "email". This simply helps us make messages a little cleaner.
+	| 以下の言語行は、例えば"email"の代わりに「メールアドレス」のように、
+	| 読み手にフレンドリーな表現でプレースホルダーを置き換えるために指定する
+	| 言語行です。これはメッセージをよりきれいに表示するために役に立ちます。
 	|
 	*/
 
