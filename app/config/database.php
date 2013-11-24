@@ -92,7 +92,7 @@ return array(
 	|
 	| ここで指定したテーブルに、アプリケーションで実行済みの全マイグレーション
 	| 情報が保存されます。この情報を使用することで、ディスク上の
-	| どのマイグレーションが未実行なのかを判断することができます。
+	| the migrations on disk haven't actually been run in the database.
 	|
 	*/
 
@@ -111,7 +111,7 @@ return array(
 
 	'redis' => array(
 
-		'cluster' => true,
+		'cluster' => false,
 
 		'default' => array(
 			'host'     => '127.0.0.1',
