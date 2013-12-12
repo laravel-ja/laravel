@@ -19,14 +19,14 @@ $app = new Illuminate\Foundation\Application;
 |--------------------------------------------------------------------------
 |
 | Laravelは極めて簡単なアプローチをアプリケーション環境に対して取っています。
-| ですから環境に対応するマシン名かHTTPホストを指定してください。
+| 設定したい環境に対応するマシン名を指定してください。
 | それにより、自動的に環境は決定されます。
 |
 */
 
 $env = $app->detectEnvironment(array(
 
-	'local' => array('your-machine-name'),
+	'local' => array('あなたのマシン名'),
 
 ));
 
