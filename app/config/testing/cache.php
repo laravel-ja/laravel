@@ -11,7 +11,7 @@ return array(
 	| コントロールします。もちろんお好きな他のドライバーをいつでも使用できます。
 	| これはドライバーが指定されなかった場合に使用されます。
 	|
-	| サポートドライバー: "file", "database", "apc", "memcached", "redis", "array"
+	| サポートドライバー:"file", "database", "apc", "memcached", "redis", "array"
 	|
 	*/
 
