@@ -92,7 +92,7 @@ return array(
 	|
 	| ここで指定したテーブルに、アプリケーションで実行済みの全マイグレーション
 	| 情報が保存されます。この情報を使用することで、ディスク上の
-	| the migrations on disk haven't actually been run in the database.
+	| どのマイグレーションが未実行なのかを判断することができます。
 	|
 	*/
 
