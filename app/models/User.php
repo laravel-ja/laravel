@@ -40,6 +40,37 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	}
 
 	/**
+	 * "Remember me"セッションのトークン値取得
+	 *
+	 * @return string
+	 */
+	public function getRememberToken()
+	{
+		return $this->remember_token;
+	}
+
+	/**
+	 * "Remember me"セッションのトークン値設定
+	 *
+	 * @param  string  $value
+	 * @return void
+	 */
+	public function setRememberToken($value)
+	{
+		$this->remember_token = $value;
+	}
+
+	/**
+	 * "Remember me"トークンのカラム名取得
+	 *
+	 * @return string
+	 */
+	public function getRememberTokenName()
+	{
+		return 'remember_token';
+	}
+
+	/**
 	 * パスワードリマインダーを送信するメールアドレスの取得
 	 *
 	 * @return string

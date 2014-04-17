@@ -5,10 +5,10 @@
 
     RewriteEngine On
 
-    # Redirect Trailing Slashes...
+    # 最後がスラッシュのURLでアクセスされた場合のリダイレクト
 	RewriteRule ^(.*)/$ /$1 [L,R=301]
 
-	# Handle Front Controller...
+	# フロントコントローラーへの処理
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
