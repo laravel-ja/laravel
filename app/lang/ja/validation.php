@@ -33,7 +33,7 @@ return array(
 	"different"            => ":attributeと:otherには、異なった内容を指定してください。",
 	"digits"               => ":attributeは:digits桁で指定してください。",
 	"digits_between"       => ":attributeは:min桁から:max桁の間で指定してください。",
-	"email"                => "The :attribute must be a valid email address.",
+	"email"                => ":attributeには、有効なメールアドレスを指定してください。",
 	"exists"               => "選択された:attributeは正しくありません。",
 	"image"                => ":attributeには画像ファイルを指定してください。",
 	"in"                   => "選択された:attributeは正しくありません。",
@@ -58,8 +58,9 @@ return array(
 	"required"             => ":attributeは必ず指定してください。",
 	"required_if"          => ":otherが:valueの場合、:attributeも指定してください。",
 	"required_with"        => ":valuesを指定する場合は、:attributeも指定してください。",
+	"required_with_all"    => ":valuesを指定する場合は、:attributeも指定してください。",
 	"required_without"     => ":valuesを指定しない場合は、:attributeを指定してください。",
-	"required_without_all" => "The :attribute field is required when none of :values are present.",
+	"required_without_all" => ":valuesのどれも指定しない場合は、:attributeを指定してください。",
 	"same"                 => ":attributeと:otherには同じ値を指定してください。",
 	"size"                 => array(
 		"numeric" => ":attributeは:sizeを指定してください。",
@@ -81,7 +82,11 @@ return array(
 	|
 	*/
 
-	'custom' => array(),
+	'custom' => array(
+		'attribute-name' => array(
+			'rule-name' => 'custom-message',
+		),
+	),
 
 	/*
 	|--------------------------------------------------------------------------

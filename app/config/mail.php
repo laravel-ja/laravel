@@ -11,7 +11,7 @@ return array(
 	| サポートしています。アプリケーション全体で使用する方法を選び指定して
 	| ください。デフォルトではSMTPメールをセットしています。
 	|
-	| サポート："smtp"、"mail", "sendmail"
+	| サポート："smtp"、"mail", "sendmail", "mailgun", "mandrill", "log"
 	|
 	*/
 

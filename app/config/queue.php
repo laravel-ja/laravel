@@ -11,7 +11,7 @@ return array(
 	| 統一されたAPIをサポートしています。ここではデフォルトキュードライバーを
 	| 設定します。
 	|
-	| サポートドライバー: "sync", "beanstalkd", "sqs"
+	| サポートドライバー: "sync", "beanstalkd", "sqs", "redis"
 	|
 	*/
 
@@ -55,6 +55,7 @@ return array(
 			'token'   => 'your-token',
 			'project' => 'your-project-id',
 			'queue'   => 'your-queue-name',
+			'encrypt' => true,
 		),
 
 		'redis' => array(
