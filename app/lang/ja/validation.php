@@ -27,6 +27,7 @@ return array(
 		"string"  => ":attributeは、:min文字から、:max文字の間で指定してください。",
 		"array"   => ":attributeは、:min個から:max個の間で指定してください。",
 	),
+	"boolean"              => ":attributeには、trueかfalseを指定してください。",
 	"confirmed"            => ":attributeと、確認フィールドとが、一致していません。",
 	"date"                 => ":attributeには有効な日付を指定してください。",
 	"date_format"          => ":attributeは:format形式で指定してください。",
@@ -70,6 +71,7 @@ return array(
 	),
 	"unique"               => ":attributeの値は既に存在しています。",
 	"url"                  => ":attributeに正しい形式をご指定ください。",
+	"timezone"             => ":attributeには、有効なタイムゾーンを指定してください。",
 
 	/*
 	|--------------------------------------------------------------------------

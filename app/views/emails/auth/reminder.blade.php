@@ -8,7 +8,7 @@
 
 		<div>
 			パスワードをリセットするには、リンク先のフォームを入力してください。: {{ URL::to('password/reset', array($token)) }}.<br/>
-			This link will expire in {{ Config::get('auth.reminder.expire', 60) }} minutes.
+			このリンクは、{{ Config::get('auth.reminder.expire', 60) }} 分で無効になります。
 		</div>
 	</body>
 </html>
